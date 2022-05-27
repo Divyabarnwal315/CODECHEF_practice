@@ -1,50 +1,22 @@
 #include <iostream>
 using namespace std;
-
-int main() {
+int main()
+{
     int t;
-    cin>>t;
-    while(t--)
+    cin >> t;
+    while (t--)
     {
-        int A,B,C;
-        cin>>A>>B>>C;
-        if(A>B && A>C)
-        {
-            if(A>B+C)
+        int A, B, C;
+        cin >> A >> B >> C;
+        
+            if (A > B + C || B > A + C || C > B + A)
             {
-            cout<<"YES"<<endl;
+                cout << "YES" << endl;
             }
-        else
-        {
-             cout<<"NO"<<endl;
-        }
-        }
-        else if(B>A && B>C)
-        {
-        if(B>A+C)
+            else
             {
-            cout<<"YES"<<endl;
+                cout<<"NO"<<endl;
             }
-        else
-        {
-             cout<<"NO"<<endl;
-        }
-        }
-        else if(C>A && C>B )
-        {
-        if(C>B+A)
-            {
-            cout<<"YES"<<endl;
-            }
-        else
-        {
-             cout<<"NO"<<endl;
-        }
     }
-    else
-    {
-        cout<<"NO"<<endl;
-    }
-    }
-	return 0;
+    return 0;
 }
