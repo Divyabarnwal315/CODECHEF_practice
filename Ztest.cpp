@@ -1,10 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
-int insert(int arr[],int n , int pos)
-{
-    int i;
-for(i=n; i>=pos; i--)
-arr[i]=arr[i-1];
-arr[pos-1]=x;
-return arr;
+int main(){
+    int n,r,out=0;
+    cin>>n;
+    while(n>0)
+    {
+r=n%10;
+out=out+r;
+n=n/10;
+    }
+cout<<out<<endl;
+return 0;
 }
