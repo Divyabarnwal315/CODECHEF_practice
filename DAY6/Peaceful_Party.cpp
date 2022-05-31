@@ -5,10 +5,9 @@ int main(){
     cin>>t;
     while(t--)
 {
-    int S;
-    cin>>S;
-    int X=1;
-    cout<<-(X+S)<<endl;
+    int A,B,C;
+    cin>>A>>B>>C;
+    cout<<max(B,(A+C))<<endl;
 }
 return 0;
 }
