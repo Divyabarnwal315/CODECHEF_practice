@@ -5,6 +5,10 @@ int main(){
     cin>>t;
     while(t--)
 {
+    int N;
+    string A;
+    string B;
+    cin>>N>>A>>B;
     
 }
 return 0;
