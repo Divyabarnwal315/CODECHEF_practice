@@ -1,4 +1,4 @@
-/#include <bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 int main()
 {
@@ -10,25 +10,21 @@ double ans=0;
 if(C=='+')
 {
     ans=A+B;
-    cout<<ans<<endl;
-    break;
+    cout<<ans<<endl;  
 }
 else if(C=='-')
 {
     ans=A-B;
-    cout<<ans<<endl;
-    break;
+    cout<<ans<<endl;  
 }
 else if(C=='*')
 {
     ans=A*B;
     cout<<ans<<endl;
-    break;
 }
-else(C=='/')
+else if(C=='/')
 {
-    cout <<fixed<< setprecision(3) <<A/B<<endl;
-    break;
+    cout <<fixed<< setprecision(1) <<A/B<<endl;
 }
 return 0;
 }
