@@ -16,7 +16,8 @@ z max x,y,z;
 
     int X,Y,Z;
     cin>>X>>Y>>Z;
-    if(((X+Y)==Z) || ((Y+Z)==X)|| ((Z+X)==Y))
+    //if(((X+Y)==Z) || ((Y+Z)==X)|| ((Z+X)==Y)) 
+    if((X+Y+Z) == 2*(max(X,max(Y,Z))))
     {
         cout<<"yes"<<endl;
     }
