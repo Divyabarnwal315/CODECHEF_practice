@@ -33,19 +33,49 @@ int main()
     cout << p[1] << endl;
 
     delete[] p;
+    // nullptr is made for pointer in c++
     p = nullptr;
 
     return 0;
 }
-//
+// array in heap
 #include <iostream>
 using namespace std;
 int main()
 {
     int size;
-    cout<<"Enter number of elements: ";
-    cin>>size;
+    cout << "Enter number of elements: ";
+    cin >> size;
     int arr[size];
-    cout<<sizeof arr<<endl;
+    cout << sizeof arr << endl;
+    return 0;
+}
+// create a new array again inside heap with a diff size and assign it to p
+#include <iostream>
+using namespace std;
+int main()
+{
+    int size;
+    cout << "Enter number of elements: ";
+    cin >> size;
+    int *p = new int[size];
+
+    cout << "Enter new size";
+    cin >> size;
+    p = new int[size];
+
+    return 0;
+}
+//simple way of same code
+#include <iostream>
+using namespace std;
+int main()
+{
+    int size;
+    int *p = new int[20];
+//phle del krenge p ko nhi memory leak ho jaegi
+    delete []p;
+    p = new int[40];
+
     return 0;
 }
