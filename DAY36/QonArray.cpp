@@ -36,20 +36,22 @@ int main()
         return 0;
     }
     // Storing rc elements of 1 matrix
-    cout << "\n"<< "Enter elements of Matrix-1: " << endl;
+    cout << "\n"
+         << "Enter elements of Matrix-1: " << endl;
     for (int i = 0; i < R1; ++i)
     {
-        for (int j = 0; i < C1; ++j)
+        for (int j = 0; j < C1; ++j)
         {
             cout << "Enter elements a" << i + 1 << j + 1 << " ";
             cin >> A[i][j];
         }
     }
     // Storing rc elements of 2 matrix
-    cout << "\n"<< "Enter elements of Matrix-2: " << endl;
+    cout << "\n"
+         << "Enter elements of Matrix-2: " << endl;
     for (int i = 0; i < R2; ++i)
     {
-        for (int j = 0; i < C2; ++j)
+        for (int j = 0; j < C2; ++j)
         {
             cout << "Enter elements b" << i + 1 << j + 1 << " ";
             cin >> B[i][j];
@@ -58,7 +60,7 @@ int main()
     // Multiplying matrix a and b and also storing elements in array mult
     for (int i = 0; i < R1; ++i)
     {
-        for (int j = 0; i < C2; ++j)
+        for (int j = 0; j < C2; ++j)
         {
             mul[i][j] = 0;
             for (int k = 0; k < C1; ++k)
@@ -68,7 +70,8 @@ int main()
         }
     }
     // Now dispalying the final outcome of product of two matrix
-    cout << endl<< "Output Matrix: " << endl;
+    cout << endl
+         << "Output Matrix: " << endl;
     for (int i = 0; i < R1; ++i)
     {
         for (int j = 0; j < C2; ++j)
@@ -82,4 +85,4 @@ int main()
     }
     return 0;
 }
-//DOUBT
+// REVISION

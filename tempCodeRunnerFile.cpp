@@ -1,16 +1,31 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
-int main()
+#define int long long
+int32_t main()
 {
-    int A[5]{2, 4, 6, 8, 10};
-    int *p = A;
-
-    for (int i = 0; i < 5; i++)
+    int t;
+    cin>>t;
+    while(t--)
+{
+    int A,B,C;
+    cin>>A>>B>>C;
+    int D=C/B;
+    int M=min(A,D);
+    int power=0;
+    if(C%B==0)
     {
-        //we can also write if as
-        //cout<<i[A] we will get same result
-        cout<<*(A+i)<<endl;
+        power=((pow(B,2))*M);
+        //cout<<pow(B,2)<<endl;
+        //cout<<M<<endl;
+        cout<<power<<endl;
     }
-    
-    return 0;
+    else if(C%B!=0)
+    {
+        power=(pow(B,2)*M) + (pow(C%B,2));
+        //cout << pow(B, 2) << endl;
+        //cout << M << endl;
+        cout<<power<<endl;
+    }
+}
+return 0;
 }
