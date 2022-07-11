@@ -2,7 +2,8 @@
 //we should not use cin and cout within funct
 #include <iostream>
 using namespace std;
-void main()
+void display()
 {
-
+cout<<"Hello";
 }
+void main()
