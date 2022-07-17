@@ -17,7 +17,8 @@
     "initializer_list": "cpp",
     "unordered_map": "cpp",
     "unordered_set": "cpp",
-    "regex": "cpp"
+    "regex": "cpp",
+    "sstream": "cpp"
   },
   "C_Cpp.errorSquiggles": "Enabled"
 }
