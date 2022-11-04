@@ -18,7 +18,8 @@
     "unordered_map": "cpp",
     "unordered_set": "cpp",
     "regex": "cpp",
-    "sstream": "cpp"
+    "sstream": "cpp",
+    "*.tcc": "cpp"
   },
   "C_Cpp.errorSquiggles": "Enabled"
 }
