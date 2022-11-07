@@ -4,19 +4,19 @@ using namespace std;
 int32_t main()
 {
     int t;
-    cin>>t;
-    while(t--)
-{
-    int N,X;
-    cin>>N>>X;
-    if(N<=X)
+    cin >> t;
+    while (t--)
     {
-        cout<<"YES"<<endl;
+        int N, X;
+        cin >> N >> X;
+        if (N <= X && (X % N) == 0)
+        {
+            cout << "YES" << endl;
+        }
+        else
+        {
+            cout << "NO" << endl;
+        }
     }
-    else
-    {
-        cout<<"NO"<<endl;
-    }
-}
-return 0;
+    return 0;
 }
