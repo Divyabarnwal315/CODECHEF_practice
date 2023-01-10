@@ -15,28 +15,26 @@ int32_t main()
         {
             cin>>A[i];
         }
-        for(int j=0;j<N;j++)
-        {
-            cin>>B[j];
-        }
-        //agr khi v day k row me 0 aa gya to next day se 1 se hi count hoga
-        int count=0;
         for(int i=0;i<N;i++)
         {
-            for(int j=0;j<N;j++)
-            if((A[i]!=0)&&(B[j]!=0))
-            {
-                cout<<N<<endl;
-            }
-            else if((A[i]!=0)||(B[j]!=0))
-            {
+            cin>>B[i];
+        }
+        //agr khi v day k row me 0 aa gya to next day se 1 se hi count hoga
+        int count=0,ans=0;
+        for(int i=0;i<N;i++)
+        {
+            
+            if((A[i]!=0)&&(B[i]!=0))
+            {  
                 count++;
+                ans= max (count,ans);
             }
             else
             {
-
+                count=0;
             }
         }
+            cout<<ans<<endl;
     }
 return 0;
 }
