@@ -4,23 +4,23 @@ using namespace std;
 int32_t main()
 {
     int t;
-    cin>>t;
-    while(t--)
+    cin >> t;
+    while (t--)
     {
-        int A,B,X;
-        cin>>A>>B>>X;
-        if(A==B)
+        int A, B, X;
+        cin >> A >> B >> X;
+        if (A == B)
         {
-            cout<<"YES"<<endl;
+            cout << "YES" << endl;
         }
-        else if(((A+X)==(B-X))||((A-X)==(B+X)))
+        else if (((max(A, B) - min(A, B)) % (2 * X)) == 0)
         {
-            cout<<"YES"<<endl;
+            cout << "YES" << endl;
         }
         else
         {
-            cout<<"NO"<<endl;
+            cout << "NO" << endl;
         }
     }
-return 0;
+    return 0;
 }
