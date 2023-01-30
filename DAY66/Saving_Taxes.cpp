@@ -7,9 +7,9 @@ int32_t main()
     cin>>t;
     while(t--)
     {
-        int N,M,K;
-        cin>>N>>M>>K;
-        
+        int Y,X;
+        cin>>Y>>X;
+        cout<<Y-X<<endl;
     }
 return 0;
 }
