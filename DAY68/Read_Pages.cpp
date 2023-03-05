@@ -4,19 +4,19 @@ using namespace std;
 int32_t main()
 {
     int t;
-    cin>>t;
-    while(t--)
+    cin >> t;
+    while (t--)
     {
-        int N,X,Y;
-        cin>>N>>X>>Y;
-        if((Y*X)>=N)
+        int N, X, Y;
+        cin >> N >> X >> Y;
+        if ((Y * X) >= N)
         {
-            cout<<"YES"<<endl;
+            cout << "YES" << endl;
         }
         else
         {
-            cout<<"NO"<<endl;
+            cout << "NO" << endl;
         }
     }
-return 0;
+    return 0;
 }
