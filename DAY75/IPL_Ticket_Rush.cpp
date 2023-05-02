@@ -18,4 +18,6 @@ int32_t main()
         cout<<N-M<<endl;
     }
     }
+
 return 0;
+}
