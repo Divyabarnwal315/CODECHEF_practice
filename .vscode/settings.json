@@ -19,7 +19,14 @@
     "unordered_set": "cpp",
     "regex": "cpp",
     "sstream": "cpp",
-    "*.tcc": "cpp"
+    "*.tcc": "cpp",
+    "functional": "cpp",
+    "ratio": "cpp",
+    "scoped_allocator": "cpp",
+    "tuple": "cpp",
+    "type_traits": "cpp",
+    "utility": "cpp"
   },
-  "C_Cpp.errorSquiggles": "Enabled"
+  "C_Cpp.errorSquiggles": "Enabled",
+  "cph.general.onceMaintainerMessage": false
 }
