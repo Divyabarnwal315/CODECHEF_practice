@@ -4,23 +4,31 @@ using namespace std;
 int32_t main()
 {
     int t;
-    cin>>t;
-    while(t--)
+    cin >> t;
+    while (t--)
     {
-        int  N,M;
-        cin>>N>>M;
-        if(N%2==0 && M%2==0)
+        int N, M;
+        cin >> N >> M;
+        if (N % 2 ^ M % 2)
         {
-            cout<<"YES"<<endl;
-        }
-        else if(N%2==1 && M%2==1)
-        {
-            cout<<"YES"<<endl;
+            cout << "NO" << endl;
         }
         else
         {
-            cout<<"NO"<<endl;
+            cout << "YES" << endl;
         }
+        // if(N%2==0 && M%2==0)
+        // {
+        //     cout<<"YES"<<endl;
+        // }
+        // else if(N%2==1 && M%2==1)
+        // {
+        //     cout<<"YES"<<endl;
+        // }
+        // else
+        // {
+        //     cout<<"NO"<<endl;
+        // }
         // if(N==M)
         // {
         //     cout<<"YES"<<endl;
@@ -48,5 +56,5 @@ int32_t main()
         //     }
         // }
     }
-return 0;
+    return 0;
 }
